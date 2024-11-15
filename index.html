@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPS - Empresa Promotora de Salud</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Estilos de encabezado */
+    header {
+      background-color: #1e4e7c;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c6e2ff;
+    }
+
+    /* Estilos de contenido principal */
+    main {
+      padding: 40px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h1, h2, h3 {
+      color: #1e4e7c;
+      font-weight: 700;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 40px;
+    }
+
+    .services-grid li {
+      background-color: #f8f8f8;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .services-grid li:hover {
+      transform: translateY(-5px);
+    }
+
+    .services-grid li img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 40px;
+    }
+
+    .news-grid article {
+      background-color: #f8f8f8;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-grid article iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #1e4e7c;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2a6799;
+    }
+
+    /* Estilos de pie de página */
+    footer {
+      background-color: #1e4e7c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav li {
+        margin-right: 10px;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-content,
+      .hero-image {
+        flex: auto;
+      }
+
+      .hero-image {
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="https://via.placeholder.com/150x50.png?text=Logo+EPS" alt="EPS - Empresa Promotora de Salud" width="150" height="50"></a>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Afiliación</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bienvenido a nuestra EPS</h1>
+        <p>Ofrecemos servicios de salud integrales y de calidad.</p>
+        <a href="#" class="btn">Conoce más</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/500x300.png?text=Imagen+de+Doctor" alt="Doctor atendiendo a un paciente">
+      </div>
+    </section>
+
+    <section>
+      <h2>Nuestros Servicios</h2>
+      <ul class="services-grid">
+        <li>
+          <img src="https://via.placeholder.com/60.png?text=Icono" alt="Atención Primaria">
+          <h3>Atención Primaria</h3>
+          <p>Brindamos atención médica básica y preventiva.</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/60.png?text=Icono" alt="Especialidades Médicas">
+          <h3>Especialidades Médicas</h3>
+          <p>Ofrecemos una amplia gama de especialidades.</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/60.png?text=Icono" alt="Laboratorio Clínico">
+          <h3>Laboratorio Clínico</h3>
+          <p>Contamos con un laboratorio clínico moderno.</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/60.png?text=Icono" alt="Urgencias y Emergencias">
+          <h3>Urgencias y Emergencias</h3>
+          <p>Atendemos situaciones de emergencia las 24 horas.</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/60.png?text=Icono" alt="Promoción y Prevención">
+          <h3>Promoción y Prevención</h3>
+          <p>Implementamos programas de salud preventiva.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Proceso de Afiliación</h2>
+      <p>Descubre cómo puedes afiliarte a nuestra EPS.</p>
+      <a href="#" class="btn">Afíliate Ahora</a>
+    </section>
+
+    <section>
+      <h2>Últimas Noticias</h2>
+      <div class="news-grid">
+        <article>
+          <img src="https://via.placeholder.com/300x200.png?text=Nuevo+Centro+de+Salud" alt="Nuevo Centro de Salud Inaugurado">
+          <h3>Nuevo Centro de Salud Inaugurado</h3>
+          <p>Hemos abierto un nuevo centro de salud en la ciudad...</p>
+          <a href="#" class="btn">Leer Más</a>
+        </article>
+        <article>
+          <iframe src="https://www.youtube.com/embed/tG1rQf_1pn4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Video Informativo sobre la EPS</h3>
+          <p>Mira nuestro video sobre la importancia de los servicios de salud...</p>
+          <a href="#" class="btn">Leer Más</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 EPS
